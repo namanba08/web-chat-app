@@ -15,11 +15,11 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5001", {
-				query: {
-					userId: authUser._id,
-				},
-			});
+			const socket = io("https://web-chat-app-xqz7.onrender.com", {
+        query: {
+          userId: authUser._id,
+        },
+      });
 
 			setSocket(socket);
 
