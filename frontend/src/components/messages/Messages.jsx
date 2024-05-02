@@ -22,6 +22,7 @@ const Messages = () => {
 				messages.map((message) => (
 					<div key={message._id} ref={lastMessageRef}>
 						<Message message={message} />
+						
 					</div>
 				))}
 
@@ -56,3 +57,5 @@ export default Messages;
 // 	);
 // };
 // export default Messages;
+
+
